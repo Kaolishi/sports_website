@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APU Sports Club - Enquiry Form</title>
+    <link rel="stylesheet" href="enquiry.css">
+    </head>
+<body>
+    <header>
+        <h1>APU Basketball Club</h1>
+        <p>Have any questions? Reach out to us!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Mission</a></li>
+            <li><a href="#">Vision</a></li>
+            <li><a href="#">Objective</a></li>
+            <li><a href="#">Rules and Regulations</a></li>
+            <li><a href="Required_equipment.html">Required Attire & Equipment</a></li>
+            <li><a href="Registration_form.html">Registration Form</a></li>
+            <li><a href="#">Calendar and Events</a></li>
+            <li><a href="#">News and Media</a></li>
+            <li><a href="Enquiry_form.html">Enquiry Form</a></li>
+            <li><a href="Feedback_form.html">Feedback Form</a></li>
+            <li><a href="contacts.html" class="active">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="enquiry">
+        <h2>Enquiry Form</h2>
+        <p>If you have any questions, fill out the form below and we'll get back to you soon!</p>
+
+        <form action="submit_enquiry.php" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="message">Your Enquiry:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit Enquiry</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2020 APU Sports Club. All rights reserved.</p>
+    </footer>
+    
+    <script src="enquiry.js"></script>
+
+</body>
+</html>

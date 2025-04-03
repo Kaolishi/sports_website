@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APU Sports Club - Registration</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+
+<body>
+    
+    <header>
+        <h1>APU Basketball Club</h1>
+        <p>Register to join the club and be part of the team!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Mission</a></li>
+            <li><a href="#">Vision</a></li>
+            <li><a href="#">Objective</a></li>
+            <li><a href="#">Rules and Regulations</a></li>
+            <li><a href="Required_equipment.html">Required Attire & Equipment</a></li>
+            <li><a href="Registration_form.html">Registration Form</a></li>
+            <li><a href="#">Calendar and Events</a></li>
+            <li><a href="#">News and Media</a></li>
+            <li><a href="Enquiry_form.html">Enquiry Form</a></li>
+            <li><a href="Feedback_form.html">Feedback Form</a></li>
+            <li><a href="contacts.html" class="active">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="registration">
+        <h2>Registration Form</h2>
+
+        <!-- Form Section -->
+        <div id="form-section">
+            <form id="registration-form">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label class="terms-label">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    I agree to the terms and conditions
+                </label>
+
+                <button type="submit">Register Now</button>
+            </form>
+        </div>
+
+        <!-- Success Message (Hidden Initially) -->
+        <div id="success-message" class="success-message" style="display: none;">
+            <h2>🎉 Success!</h2>
+            <p>Welcome to <strong>APU Basketball Club</strong>. Your registration has been submitted.</p>
+            <a href="index.html" class="btn">Back to Home</a>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2020 APU Sports Club. All rights reserved.</p>
+    </footer>
+    
+    <script src="registration.js"></script>
+
+</body>
+</html>

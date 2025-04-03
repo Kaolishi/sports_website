@@ -1,0 +1,244 @@
+﻿/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    text-align: center;
+}
+
+/* Header with Background Image */
+header {
+    background: url('picture/bsb 1.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 100px 20px;
+}
+
+/* Header Fonts */
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+}
+
+/* Navigation Bar */
+nav {
+    background: #333; /* Dark background */
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 18px;
+    display: block;
+    font-size: 16px;
+    font-weight: normal;
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Hover Effect - Grey Hover */
+nav ul li a:hover {
+    background: rgba(128, 128, 128, 0.5); /* ✅ Grey Hover */
+    transform: scale(1.05);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Content Section */
+section {
+    margin: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+}
+
+/* Attire Container */
+.attire-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.attire-item {
+    width: 200px;
+    text-align: center;
+}
+
+.attire-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Button Styles */
+button {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Hidden Message */
+.hidden {
+    display: none;
+    font-size:20px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+#topBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 50%;
+    display: none;
+}
+
+#topBtn:hover {
+    background-color: #ff6347;
+}
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    max-width: 50%;
+    margin: auto;
+    overflow: hidden; /* Ensure images don’t exceed container */
+}
+
+.slideshow-container img {
+    width: 50%; /* Make images take full width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Crop and fit the image inside container */
+}
+/* Styled button */
+.attire-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(45deg, #ff5733, #ffbd33); /* Gradient effect */
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    transition: all 5s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+
+/* Hover effect */
+.attire-btn:hover {
+    background: linear-gradient(45deg, #ffbd33, #ff5733); /* Reverse gradient */
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+}
+
+/* Active (click) effect */
+.attire-btn:active {
+    transform: scale(0.98);
+}
+
+
+/* Slides */
+/* Smooth Fade Effect */
+.slide {
+    display: none;
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.slide p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* Navigation arrows */
+/* Navigation arrows */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px; /* Set a fixed width for better appearance */
+    height: 50px; /* Set a fixed height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    transition: background 5s ease;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%; /* Make the buttons circular */
+    opacity: 0; /* Hide arrows initially */
+}
+
+/* Position the arrows on the left and right edges */
+.prev {
+    left: 10px; /* Adjust as needed */
+}
+
+.next {
+    right: 10px; /* Adjust as needed */
+}
+
+/* Show arrows when hovering over the slideshow */
+.slideshow-container:hover .prev,
+.slideshow-container:hover .next {
+    opacity: 1;
+}
+
+/* Change color on hover */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}

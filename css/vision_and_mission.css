@@ -1,0 +1,55 @@
+﻿/* Main vision/mission section layout */
+.vision-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  
+  /* Rotating basketball image */
+  .vision-image {
+    flex: 1 1 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .vision-image img {
+    width: 250px;
+    transition: transform 0.3s ease-out;
+  }
+  
+  /* Mission text */
+  .vision-text {
+    flex: 2 1 500px;
+    text-align: left;
+  }
+  
+  .vision-text h2 {
+    color: #277561;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+  
+  .vision-text p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 768px) {
+    .vision-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .vision-text {
+      text-align: center;
+    }
+  }
+  
