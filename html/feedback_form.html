@@ -1,71 +1,120 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>APU Sports Club - Feedback</title>
-    <link rel="stylesheet" href="feedback.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feedback | APU Sports Club</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/feedback.css" />
 </head>
+
 <body>
-    <header>
-        <h1>APU Basketball Club</h1>
-        <p>We value your feedback! Let us know how we're doing.</p>
-    </header>
 
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Mission</a></li>
-            <li><a href="#">Vision</a></li>
-            <li><a href="#">Objective</a></li>
-            <li><a href="#">Rules and Regulations</a></li>
-            <li><a href="Required_equipment.html">Required Attire & Equipment</a></li>
-            <li><a href="Registration_form.html">Registration Form</a></li>
-            <li><a href="#">Calendar and Events</a></li>
-            <li><a href="#">News and Media</a></li>
-            <li><a href="Enquiry_form.html">Enquiry Form</a></li>
-            <li><a href="Feedback_form.html">Feedback Form</a></li>
-            <li><a href="contacts.html" class="active">Contact Us</a></li>
-        </ul>
-    </nav>
+  <!-- Banner/Header -->
+  <header>
+    <h1>APU Sports Club</h1>
+    <p>Join us for sports, fitness, and fun!</p>
+  </header>
 
-    <section id="feedback">
-        <h2>Feedback Form</h2>
-        <p>We appreciate your feedback! It helps us improve and serve you better. </p>
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="vision_and_mission.html">Vision and Mission</a></li>
+      <li><a href="objective.html" class="active">Objective</a></li>
+      <li><a href="rules_and_regulations.html">Rules and Regulations</a></li>
+      <li><a href="required_equipment.html">Required Attire and Equipment</a></li>
+      <li><a href="registration_form.html">Registration</a></li>
+      <li><a href="calender_and_events.html">Calendar and Events</a></li>
+      <li><a href="news_and_media.html">News and Media</a></li>
+      <li><a href="enquiry_form.html">Enquiry</a></li>
+      <li><a href="feedback_form.html">Feedback</a></li>
+      <li><a href="contacts.html">Contacts</a></li>
+    </ul>
+  </nav>
 
-        <form id="feedbackForm">
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required>
-            <span id="nameError" class="error-message"></span>
+  <!-- Feedback Section -->
+  <section class="feedback-wrapper">
+    <div class="feedback-left">
+      <h2>We’d Love Your Feedback ❤️</h2>
+      <p>Your thoughts matter. Let us know how we’re doing and how we can make the club even better for you!</p>
+      <img src="../picture/feedback.gif" alt="Feedback illustration" />
+    </div>
 
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" required>
-            <span id="emailError" class="error-message"></span>
+    <div class="feedback-form-area">
+      <form id="feedbackForm">
+        <div class="form-field">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
 
-            <label for="rating">How would you rate your experience?</label>
-            <select id="rating" name="rating" required>
-                <option value="" disabled selected>Select a rating</option>
-                <option value="Excellent">Excellent</option>
-                <option value="Good">Good</option>
-                <option value="Average">Average</option>
-                <option value="Poor">Poor</option>
-            </select>
-            <p id="ratingMessage"></p>
+        <div class="form-field">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required />
+        </div>
 
-            <label for="message">Your Feedback:</label>
-            <textarea id="message" name="message" maxlength="250" required></textarea>
-            <p id="charCount">0/250</p>
+        <div class="form-field">
+          <label for="rating">Your Rating</label>
+          <select id="rating" name="rating" required>
+            <option value="" disabled selected>Select a rating</option>
+            <option value="Excellent">🌟 Excellent</option>
+            <option value="Good">👍 Good</option>
+            <option value="Average">👌 Average</option>
+            <option value="Poor">👎 Poor</option>
+          </select>
+        </div>
 
-            <button type="submit">Submit Feedback</button>
-        </form>
+        <div class="form-field">
+          <label for="message">Your Feedback</label>
+          <textarea id="message" name="message" maxlength="250" required></textarea>
+          <p id="charCount">0/250</p>
+        </div>
 
-        <p id="successMessage" style="display: none; color: green; font-weight: bold;">You have successfully submitted your feedback!</p>
-    </section>
+        <button type="submit">Submit Feedback</button>
+        <p id="successMessage" class="hidden">✅ Thank you for your feedback!</p>
+      </form>
+    </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2020 APU Sports Club. All rights reserved.</p>
-    </footer>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-column">
+      <img src="../picture/apu.jpg" alt="Logo" style="max-width: 150px;">
+      <p style="margin-top: 10px;">APU<br>BASKETBALL CLUB</p>
+    </div>
 
-    <script src="feedback.js"></script>
+    <div class="footer-column">
+      <h3>Get to know us !</h3>
+      <ul>
+        <li><a href="vision_and_mission.html">Vision and Mission</a></li>
+        <li><a href="objective.html">Objective</a></li>
+        <li><a href="news_and_media.html">News and Media</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>Come Join Us !</h3>
+      <ul>
+        <li><a href="registration_form.html">Registration</a></li>
+        <li><a href="enquiry_form.html">Enquiry</a></li>
+        <li><a href="feedback_form.html">Feedback</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column footer-contact">
+      <h3>Contact</h3>
+      <p>📞 (+60) 11-5398898</p>
+      <p>📧 apubasketballclub2020@gmail.com </p>
+      <p>📍 Taman Teknologi Malaysia, Kuala Lumpur</p>
+    </div>
+
+    <div class="footer-bottom">
+      © 2025 - Low Jing Fong enterprise
+    </div>
+  </footer>
+
+  <script src="../js/feedback.js"></script>
 </body>
+
 </html>

@@ -1,78 +1,113 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="contacts.css">
-    <title>APU Sports Club - Contact Us</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | APU Sports Club</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/contacts.css" />
 </head>
 <body>
-    <header>
-        <h1>APU BASKETBALL CLUB</h1>
-        <p>Join us for sports, fitness, and fun!</p>
-    </header>
 
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Mission</a></li>
-            <li><a href="#">Vision</a></li>
-            <li><a href="#">Objective</a></li>
-            <li><a href="#">Rules and Regulations</a></li>
-            <li><a href="Required_equipment.html">Required Attire & Equipment</a></li>
-            <li><a href="Registration_form.html">Registration Form</a></li>
-            <li><a href="#">Calendar and Events</a></li>
-            <li><a href="#">News and Media</a></li>
-            <li><a href="Enquiry_form.html">Enquiry Form</a></li>
-            <li><a href="Feedback_form.html">Feedback Form</a></li>
-            <li><a href="contacts.html" class="active">Contact Us</a></li>
-        </ul>
-    </nav>
+  <!-- Header -->
+  <header>
+    <h1>APU Sports Club</h1>
+    <p>Join us for sports, fitness, and fun!</p>
+  </header>
 
-    <section id="contact-form">
-        <h2>Contact Us</h2>
-        <p>Fill out the form below and we will get back to you soon.</p>
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="vision_and_mission.html">Vision and Mission</a></li>
+      <li><a href="objective.html" class="active">Objective</a></li>
+      <li><a href="rules_and_regulations.html">Rules and Regulations</a></li>
+      <li><a href="required_equipment.html">Required Attire and Equipment</a></li>
+      <li><a href="registration_form.html">Registration</a></li>
+      <li><a href="calender_and_events.html">Calendar and Events</a></li>
+      <li><a href="news_and_media.html">News and Media</a></li>
+      <li><a href="enquiry_form.html">Enquiry</a></li>
+      <li><a href="feedback_form.html">Feedback</a></li>
+      <li><a href="contacts.html">Contacts</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contact + Social Section -->
+  <section class="contact-section">
+    <div class="contact-card">
+      <div class="contact-left">
+        <h2>Let's Connect 🤝</h2>
+        <p>Got a question or suggestion? Fill out the form and we’ll get back to you shortly!</p>
 
         <form id="contactForm">
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required>
-
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
-
-            <button type="submit">Send Message</button>
+          <input type="text" id="name" placeholder="Your Name" required />
+          <input type="email" id="email" placeholder="Your Email" required />
+          <textarea id="message" rows="5" placeholder="Your Message..." required></textarea>
+          <button type="submit">Send Message</button>
+          <p id="confirmationMessage" class="hidden">✅ Message sent successfully!</p>
         </form>
+      </div>
 
-        <p id="confirmationMessage" class="hidden">Thank you! Your message has been sent successfully.</p>
-    </section>
+      <div class="contact-right">
+        <h3>Follow Us 📲</h3>
+        <p>We post updates, behind-the-scenes, and event coverage. Tap to connect!</p>
+        <div class="social-buttons">
+          <a href="https://www.instagram.com/apu.basketballclub/" target="_blank" class="social insta">📸 Instagram</a>
+          <a href="https://www.facebook.com/groups/714160195281069/" target="_blank" class="social fb">📘 Facebook</a>
+          <a href="https://x.com/APUbasketball" target="_blank" class="social twitter">🐦 Twitter</a>
+        </div>
+        <img src="../picture/follow.gif" alt="Follow us illustration" />
+      </div>
+    </div>
+  </section>
 
-    <section id="social-media">
-        <h2>Find Us on Social Media</h2>
-        <p>Follow us for the latest updates and events!</p>
-        <a href="https://www.instagram.com/apu.basketballclub/" target="_blank">Instagram</a> |
-        <a href="https://www.facebook.com/groups/714160195281069/" target="_blank">Facebook</a> |
-        <a href="https://x.com/APUbasketball" target="_blank">Twitter</a>
-    </section>
+  <!-- Location -->
+  <section class="map-section">
+    <h2>📍 Visit Us</h2>
+    <p>3rd floor, APU Campus, Kuala Lumpur</p>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.146607574825!2d101.69798647509182!3d3.0554110537214743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4abb795025d9%3A0x1c37182a714ba968!2sAsia%20Pacific%20University%20of%20Technology%20%26%20Innovation%20(APU)!5e0!3m2!1sen!2smy!4v1743496490068!5m2!1sen!2smy" 
+      width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+  </section>
 
-    <section id="location">
-        <h2>Our Location</h2>
-        <p>APU Basketball Club<br> 3rd floor, APU Campus<br> Kuala Lumpur, Malaysia</p>
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.146607574825!2d101.69798647509182!3d3.0554110537214743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4abb795025d9%3A0x1c37182a714ba968!2sAsia%20Pacific%20University%20of%20Technology%20%26%20Innovation%20(APU)!5e0!3m2!1sen!2smy!4v1743496490068!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" 
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
-        </iframe>
-    </section>
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-column">
+      <img src="../picture/apu.jpg" alt="Logo" style="max-width: 150px;">
+      <p style="margin-top: 10px;">APU<br>BASKETBALL CLUB</p>
+    </div>
 
-    <footer>
-        <p>&copy; 2020 APU Sports Club. All rights reserved.</p>
-    </footer>
+    <div class="footer-column">
+      <h3>Get to know us !</h3>
+      <ul>
+        <li><a href="vision_and_mission.html">Vision and Mission</a></li>
+        <li><a href="objective.html">Objective</a></li>
+        <li><a href="news_and_media.html">News and Media</a></li>
+      </ul>
+    </div>
 
-    <script src="contacts.js"></script>
+    <div class="footer-column">
+      <h3>Come Join Us !</h3>
+      <ul>
+        <li><a href="registration_form.html">Registration</a></li>
+        <li><a href="enquiry_form.html">Enquiry</a></li>
+        <li><a href="feedback_form.html">Feedback</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column footer-contact">
+      <h3>Contact</h3>
+      <p>📞 (+60) 11-5398898</p>
+      <p>📧 apubasketballclub2020@gmail.com </p>
+      <p>📍 Taman Teknologi Malaysia, Kuala Lumpur</p>
+    </div>
+
+    <div class="footer-bottom">
+      © 2025 - Low Jing Fong enterprise
+    </div>
+  </footer>
+
+  <script src="../js/contacts.js"></script>
 </body>
 </html>
